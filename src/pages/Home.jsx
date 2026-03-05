@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Modern & Premium */}
-      <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <div className="relative bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
@@ -26,7 +26,7 @@ const Home = () => {
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Time Is
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+                <span className="block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">
                   Luxury
                 </span>
               </h1>
@@ -39,7 +39,7 @@ const Home = () => {
               {user ? (
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="bg-gradient-to-br from-blue-500 to-cyan-400 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
+                    <div className="bg-linear-to-br from-blue-500 to-cyan-400 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold shadow-lg">
                       {user.name.charAt(0).toUpperCase()}
                     </div>
                     <div className="text-left">
@@ -61,14 +61,14 @@ const Home = () => {
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Link
                       to="/products"
-                      className="flex-1 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 text-center shadow-lg"
+                      className="flex-1 bg-linear-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 text-center shadow-lg"
                     >
                       Browse Collection
                     </Link>
                     {user.isAdmin && (
                       <Link
                         to="/admin"
-                        className="flex-1 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 text-center shadow-lg"
+                        className="flex-1 bg-linear-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 text-center shadow-lg"
                       >
                         Admin Panel
                       </Link>
@@ -79,7 +79,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Link
                     to="/products"
-                    className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-center"
+                    className="group bg-linear-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-center"
                   >
                     Explore Collection
                     <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -97,7 +97,7 @@ const Home = () => {
             {/* Right Content - Watch Display */}
             <div className="hidden md:flex justify-center items-center">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-cyan-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
                 <div className="relative text-9xl animate-bounce-slow">⌚</div>
               </div>
             </div>
@@ -148,7 +148,7 @@ const Home = () => {
               to="/products"
               className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:scale-105"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+              <div className={`absolute inset-0 bg-linear-to-br ${category.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
               <div className="p-8 text-center relative z-10">
                 <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{category.name}</h3>
@@ -160,7 +160,7 @@ const Home = () => {
       </div>
 
       {/* Featured Collections - Premium Display */}
-      <div className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
+      <div className="bg-linear-to-b from-gray-50 to-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Collections</h2>
@@ -171,7 +171,7 @@ const Home = () => {
             {/* Collection Card 1 */}
             <Link
               to="/products"
-              className="group relative bg-gradient-to-br from-blue-900 to-blue-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 h-80"
+              className="group relative bg-linear-to-br from-blue-900 to-blue-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 h-80"
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500"></div>
               <div className="relative h-full p-8 flex flex-col justify-end text-white">
@@ -187,7 +187,7 @@ const Home = () => {
             {/* Collection Card 2 */}
             <Link
               to="/products"
-              className="group relative bg-gradient-to-br from-amber-900 to-orange-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 h-80"
+              className="group relative bg-linear-to-br from-amber-900 to-orange-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 h-80"
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all duration-500"></div>
               <div className="relative h-full p-8 flex flex-col justify-end text-white">
@@ -246,7 +246,7 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
+      <div className="bg-linear-to-r from-blue-600 to-cyan-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
